@@ -1,5 +1,7 @@
 'use client';
 
+import type { SVGProps } from 'react';
+
 import { motion } from 'motion/react';
 
 import AWS from '@/assets/icons/aws';
@@ -21,7 +23,7 @@ import Spring from '@/assets/icons/spring';
 import Tailwind from '@/assets/icons/tailwind';
 import TypeScript from '@/assets/icons/typescript';
 
-const skills: [string, React.Component][] = [
+const skills: [string, React.FC<SVGProps<SVGSVGElement>>][] = [
   ['React', ReactIcon],
   ['Next.js', NextJS],
   ['Django', Django],

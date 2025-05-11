@@ -5,9 +5,6 @@ export default function Java({ ...props }: React.SVGProps<SVGSVGElement>) {
       xmlSpace="preserve"
       width={233.55}
       height={428.174}
-      style={{
-        enableBackground: 'new 0 0 300 550',
-      }}
       viewBox="0 0 300 550"
       {...props}
     >
