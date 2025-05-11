@@ -1,5 +1,7 @@
 'use client';
 
+import type { SVGProps } from 'react';
+
 import { motion } from 'motion/react';
 
 import AWS from '@/assets/icons/aws';
@@ -31,7 +33,10 @@ import {
 
 type Company = 'fusion' | 'oracle';
 
-const expSkills: Record<Company, [string, React.Component][]> = {
+const expSkills: Record<
+  Company,
+  [string, React.FC<SVGProps<SVGSVGElement>>][]
+> = {
   fusion: [
     ['React', ReactIcon],
     ['Next.js', NextJS],

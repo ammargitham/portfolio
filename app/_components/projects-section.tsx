@@ -1,5 +1,7 @@
 'use client';
 
+import type { SVGProps } from 'react';
+
 import { Globe2 } from 'lucide-react';
 import { motion } from 'motion/react';
 import Image from 'next/image';
@@ -24,7 +26,10 @@ import {
 
 type Project = 'kana-canvas' | 'wallflow';
 
-const projSkills: Record<Project, [string, React.Component][]> = {
+const projSkills: Record<
+  Project,
+  [string, React.FC<SVGProps<SVGSVGElement>>][]
+> = {
   'kana-canvas': [
     ['Next.js', NextJS],
     ['TypeScript', TypeScript],

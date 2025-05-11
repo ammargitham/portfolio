@@ -6,6 +6,7 @@ export default function Avatar({ ...props }: React.SVGProps<SVGSVGElement>) {
       viewBox="0 0 1024 1024"
       {...props}
     >
+      <title>Ammar Githam</title>
       <g
         style={{
           display: 'inline',
