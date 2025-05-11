@@ -26,6 +26,7 @@ bun prettier
 - [Typescript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://v3.tailwindcss.com/)
 - [shadcn/ui](https://ui.shadcn.com/)
+- [Motion](https://motion.dev/)
 - [Radix](https://www.radix-ui.com/)
 - [Lucide Icons](https://lucide.dev/)
 - [Simple Icons](https://simpleicons.org)
