@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from '@next/third-parties/google';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 
@@ -20,6 +21,8 @@ export const metadata: Metadata = {
   description: 'Full Stack Developer based in Tokyo',
 };
 
+const gaId = process.env.GOOGLE_TAG_ID;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,6 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      {gaId && <GoogleAnalytics gaId={gaId} />}
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-[family-name:var(--font-geist-sans)] antialiased`}
       >
